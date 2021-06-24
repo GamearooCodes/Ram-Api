@@ -25,12 +25,12 @@ router.get("/", async (req, res) => {
   ];
 
   const morninggifs = [
-    "https://gamearoo.top/wp-content/uploads/2020/04/slap.gif",
-    "https://gamearoo.top/wp-content/uploads/2020/04/slap.gif",
-    "https://gamearoo.top/wp-content/uploads/2020/04/slap2.gif",
-    "https://gamearoo.top/wp-content/uploads/2020/04/slap3.gif",
-    "https://gamearoo.top/wp-content/uploads/2020/04/slap4.gif",
-    "https://66.media.tumblr.com/6612f49310618ccea8aae9781dc2cad3/8a5fd21b5c5e7193-7a/s540x810/a4f4820406fe1dc849010e39c122240d8733598c.gif",
+    "https://gamearoo.top/ram-api-img/slap.gif",
+    "https://gamearoo.top/ram-api-img/slap.gif",
+    "https://gamearoo.top/ram-api-img/slap2.gif",
+    "https://gamearoo.top/ram-api-img/slap3.gif",
+    "https://gamearoo.top/ram-api-img/slap4.gif",
+    "https://gamearoo.top/ram-api-img/slap5.gif",
   ];
   let hi = "NULL";
   let hi2 = "NULL";

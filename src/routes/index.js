@@ -9,6 +9,7 @@ const kiss = require("./kiss");
 const status = require("./status");
 const ball = require("./8ball");
 const hello = require("./hello");
+const cuddle = require("./cuddle");
 
 router.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/index.html"));
@@ -23,5 +24,6 @@ router.use("/slap", slap);
 router.use("/kiss", kiss);
 router.use("/8ball", ball);
 router.use("/hello", hello);
+router.use("/cuddle", cuddle);
 
 module.exports = router;

@@ -16,13 +16,10 @@ async function data(guildId) {
 
 router.get("/", async (req, res) => {
   const activities_list = [
-    `https://gamearoo.top/ram-api-img/hug.gif`,
-    `https://gamearoo.top/ram-api-img/hug.gif`,
-    "https://gamearoo.top/ram-api-img/hug2.gif",
-    "https://gamearoo.top/ram-api-img/hug3.gif",
-    "https://gamearoo.top/ram-api-img/hug4.gif",
-    "https://gamearoo.top/ram-api-img/hug6.gif",
-    "https://gamearoo.top/ram-api-img/hug5.gif",
+    `https://gamearoo.top/ram-api-img/c1.gif`,
+    `https://gamearoo.top/ram-api-img/c1.gif`,
+    `https://gamearoo.top/ram-api-img/c2.gif`,
+    "https://gamearoo.top/ram-api-img/c3.gif",
   ];
   const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
   let hi = {

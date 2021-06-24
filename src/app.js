@@ -1,4 +1,5 @@
 require("dotenv").config();
+var path = require("path");
 
 const express = require("express");
 const passport = require("passport");
@@ -40,6 +41,9 @@ app.use(
     store: new Store({ mongooseConnection: mongoose.connection }),
   })
 );
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname + "/index.html"));
+});
 
 app.use(passport.initialize());
 app.use(passport.session());

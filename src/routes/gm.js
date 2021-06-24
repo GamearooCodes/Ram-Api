@@ -26,13 +26,13 @@ router.get("/", async (req, res) => {
   ];
 
   const morninggifs = [
-    "http://media1.tenor.com/images/e4fdb8da09f39c70dd386a078cc1e3a6/tenor.gif",
-    "http://media1.tenor.com/images/e4fdb8da09f39c70dd386a078cc1e3a6/tenor.gif",
-    "http://media1.tenor.com/images/1825d46360aa671a7cd938f97bf759f0/tenor.gif",
-    "http://media1.tenor.com/images/11fdefc3cf323a47af3f665f018c2c77/tenor.gif",
-    "http://media1.tenor.com/images/52bf1afef19876cdaec8906952254802/tenor.gif",
-    "http://media1.tenor.com/images/eddf25eefdbff3b48957aea46f946f12/tenor.gif",
-    "http://media1.tenor.com/images/74c2f4ca5567526ec24ae931cbf3f27d/tenor.gif",
+    "https://gamearoo.top/ram-api-img/gm1.gif",
+    "https://gamearoo.top/ram-api-img/gm1.gif",
+    "https://gamearoo.top/ram-api-img/gm2.gif",
+    "https://gamearoo.top/ram-api-img/gm3.gif",
+    "https://gamearoo.top/ram-api-img/gm4.gif",
+    "https://gamearoo.top/ram-api-img/gm5.gif",
+    "https://gamearoo.top/ram-api-img/gm6.gif",
   ];
 
   const index = Math.floor(Math.random() * (morningstrings.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
