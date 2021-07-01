@@ -5,48 +5,220 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ram Api</title>
+    <link
+      id="theme"
+      rel="stylesheet"
+      type="text/css"
+      href="https://gamearoo.top/css/light.css"
+    />
+    <link
+      id="theme2"
+      rel="stylesheet2"
+      type="text/css"
+      href="https://gamearoo.top/css/dark.css"
+    />
+    <script>
+      function toggleTheme() {
+        // Obtains an array of all <link>
+        // elements.
+        // Select your element using indexing.
+        var theme = document.getElementsByTagName("link")[0];
+
+        // Change the value of href attribute
+        // to change the css sheet.
+        if (
+          theme.getAttribute("href") == "https://gamearoo.top/css/light.css"
+        ) {
+          theme.setAttribute("href", "https://gamearoo.top/css/dark.css");
+        } else {
+          theme.setAttribute("href", "https://gamearoo.top/css/light.css");
+        }
+      }
+    </script>
   </head>
+  <style>
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+      position: absolute;
+      top: 8px;
+      right: 30px;
+      font-size: 18px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    input:checked + .slider {
+      background-color: #2196f3;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196f3;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+  </style>
+
   <body>
-    <h1>This api is used for the bot Ram#2686</h1>
-    <p>Fill Free To Use This Api!</p>
-    <ui>
-      <li>
-        <a href="http://ram.gamearoo.top/api/hug">Hugs</a>
-        - A Random Hug Gif
-      </li>
-      <li>
-        <a href="http://ram.gamearoo.top/api/gm">Good Mornings</a>
-        - A Random Good morning Message and gif
-      </li>
-      <li>
-        <a href="http://ram.gamearoo.top/api/gn">Good Nights</a>
-        - A Random Good morning Message and gif
-      </li>
-      <li>
-        <a href="http://ram.gamearoo.top/api/slap">Slap</a>
-        - A Random Slap Message and gif (Contains Muti text)
-      </li>
-      <li>
-        <a href="http://ram.gamearoo.top/api/kiss">Kiss</a>
-        - A Random Kiss Gif
-      </li>
-      <li>
-        <a href="http://ram.gamearoo.top/api/8ball">8ball</a>
-        - A Random 8ball Answer
-      </li>
-      <li>
-        <a href="http://ram.gamearoo.top/api/hello">Hello</a>
-        - A Random hello
-      </li>
-      <li>
-        <a href="http://ram.gamearoo.top/api/cuddle">Cuddle</a>
-        - A Random Cuddle gif
-      </li>
+    <!-- Rounded switch -->
+    <!-- Rounded switch -->
+
+    <h1>Ram Api</h1>
+    <p class="main">This API was made for the bot Ram#2686</p>
+    <p class="main">Fill Free To Use This Api!</p>
+    <ui class="grid-container">
+      <div class="gfg">
+        <a href="http://ram.gamearoo.top/api/hug"
+          ><img src="https://gamearoo.top/ram-api-img/hug6.gif" alt="Night"
+        /></a>
+        <h3 class="hug">Hugs</h3>
+      </div>
+
+      <div class="gfg">
+        <a href="http://ram.gamearoo.top/api/gm"
+          ><img src="https://gamearoo.top/ram-api-img/gm4.gif" alt="Night"
+        /></a>
+        <h3 class="hug">Good Mornings</h3>
+      </div>
+
+      <div class="gfg">
+        <a href="http://ram.gamearoo.top/api/gn"
+          ><img src="https://gamearoo.top/ram-api-img/gn1.gif" alt="Night"
+        /></a>
+        <h3 class="hug">Good Nights</h3>
+      </div>
+      <div class="gfg">
+        <a href="http://ram.gamearoo.top/api/slap"
+          ><img src="https://gamearoo.top/ram-api-img/slap2.gif" alt="Night"
+        /></a>
+        <h3 class="hug">Slap</h3>
+      </div>
+      <div class="gfg">
+        <a href="http://ram.gamearoo.top/api/kiss"
+          ><img src="https://gamearoo.top/ram-api-img/k2.gif" alt="Night"
+        /></a>
+        <h3 class="hug">Kiss</h3>
+      </div>
+      <div class="gfg">
+        <a href="http://ram.gamearoo.top/api/8ball"
+          ><img src="https://gamearoo.top/other-img/8ball.gif" alt="Night"
+        /></a>
+        <h3 class="hug">8Ball</h3>
+      </div>
+      <div class="gfg">
+        <a href="http://ram.gamearoo.top/api/hello"
+          ><img src="https://gamearoo.top/other-img/hello.gif" alt="Night"
+        /></a>
+        <h3 class="hug">Hello</h3>
+      </div>
+      <div class="gfg">
+        <a href="http://ram.gamearoo.top/api/cuddle"
+          ><img src="https://gamearoo.top/other-img/p2Jt2P5.gif" alt="Night"
+        /></a>
+        <h3 class="hug">Cuddle</h3>
+      </div>
+      <div class="gfg">
+        <a href="http://ram.gamearoo.top/api/tired"
+          ><img src="https://gamearoo.top/ram-api-img/t4.gif" alt="Night"
+        /></a>
+        <h3 class="hug">Tired</h3>
+      </div>
+      <div class="gfg">
+        <a href="http://ram.gamearoo.top/api/sick"
+          ><img src="https://gamearoo.top/ram-api-img/s2.gif" alt="Night"
+        /></a>
+        <h3 class="hug">Sick</h3>
+      </div>
+      <div class="gfg">
+        <img src="https://gamearoo.top/other-img/11136.jpg" alt="Night" />
+        <h3 class="hug">More Coming Soon!</h3>
+      </div>
     </ui>
+
     <br />
     <br />
-    <h2><a href="http://ram.gamearoo.top/invite">Invite Ram#2686</a></h2>
-    <h2><a href="http://ram.gamearoo.top/support">Support Server</a></h2>
-    <h2><a href="https://github.com/GamearooCodes/Ram-Api">GitHub</a></h2>
+
+    <ul class="grid-container">
+      <h2>
+        <a href="http://ram.gamearoo.top/invite" class="one">Invite Ram#2686</a>
+      </h2>
+      <h2>
+        <a href="http://ram.gamearoo.top/support" class="one">Support Server</a>
+      </h2>
+      <h2><a href="http://ram.gamearoo.top" class="one">Main Site</a></h2>
+    </ul>
+    <form
+      class="hi"
+      action="https://www.paypal.com/donate"
+      method="post"
+      target="_top"
+    >
+      <input type="hidden" name="hosted_button_id" value="H3M84Z3MY442Q" />
+      <input
+        type="image"
+        src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+        border="0"
+        name="submit"
+        title="PayPal - The safer, easier way to pay online!"
+        alt="Donate with PayPal button"
+      />
+      <img
+        alt=""
+        border="0"
+        src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+        width="1"
+        height="1"
+      />
+    </form>
   </body>
+  <label class="switch">
+    <input type="checkbox" onclick="toggleTheme()" />
+    <span class="slider round"></span>
+    <p class="main">Light/Dark</p>
+  </label>
 </html>

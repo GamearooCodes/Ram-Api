@@ -8,6 +8,8 @@ const session = require("express-session");
 const Store = require("connect-mongo")(session);
 const app = express();
 const cors = require("cors");
+const https = require("https");
+const fs = require("fs");
 
 const port = process.env.PORT || 3002;
 const routes = require("./routes");
@@ -22,6 +24,8 @@ mongoose
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+app.use(express.static("static"));
 
 app.use(
   cors({
@@ -58,5 +62,14 @@ app.get("/invite", async (req, res) => {
     "https://discord.com/api/oauth2/authorize?client_id=564579659526832178&permissions=8&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Fapi%2Fauth%2Fdiscord%2Fredirect&scope=bot"
   );
 });
+app.use(require("helmet")());
 
-app.listen(80, () => console.log(`Running on port ${port}`));
+const options = {
+  cert: fs.readFileSync("./ssl/fullchain.pem"),
+  key: fs.readFileSync("./ssl/privkey.pem"),
+};
+
+app.listen(8080, () => console.log(`Running on port ${port}`));
+https
+  .createServer(options, app)
+  .listen(443, () => console.log(`Running on port 443`));

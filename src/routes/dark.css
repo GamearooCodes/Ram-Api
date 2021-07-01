@@ -1,0 +1,61 @@
+body {
+  background-color: #2f2f2f;
+}
+
+h1 {
+  color: whitesmoke;
+  text-align: center;
+}
+.main {
+  color: whitesmoke;
+  text-align: center;
+}
+
+/* li {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  } */
+img {
+  border-radius: 54px;
+  padding: 5px;
+  width: 500px;
+}
+
+.hi {
+  position: absolute;
+  top: auto;
+  left: 56%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+.gfg {
+  margin: 3%;
+  position: relative;
+}
+
+.hug {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 269px;
+  left: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.one {
+  color: blue;
+}
+.one:visited {
+  color: lightblue;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #c33;
+}
